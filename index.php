@@ -26,6 +26,9 @@ var_dump($nome);
     <p>
         Questo è il paragrafo preso da PHP : <?php echo $nome?>
     </p>
+    <p>
+        La sua lunghezza è <?php echo strlen($nome) ?> 
+    </p>
 </body>
 </html>
 
