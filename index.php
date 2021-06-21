@@ -45,7 +45,7 @@ var_dump($parolaCensuraGet);
     </p>
 
     <p>
-        Questo è il mio testo censurato: <?php echo str_replace( $parolaCensuraGet, $censored, $testo); ?>
+        Questo è il mio testo censurato: <?php echo str_ireplace( $parolaCensuraGet, $censored, $testo); ?>
     </p>
 </body>
 </html>
