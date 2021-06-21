@@ -7,10 +7,14 @@
 <?php 
 
 #Variabili
-$testo = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos porro nisi provident animi fugiat amet obcaecati quae eveniet dolore. Veritatis, sunt dolore voluptate magni nesciunt maxime inventore corrupti recusandae. Ullam nisi saepe eius dolor cupiditate quis quasi, perferendis reiciendis tempora rem laborum assumenda aperiam similique hic aspernatur asperiores placeat ab?
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos porro nisi provident animi fugiat amet obcaecati quae eveniet dolore. Veritatis, sunt dolore voluptate magni nesciunt maxime inventore corrupti recusandae. Ullam nisi saepe eius dolor cupiditate quis quasi, perferendis reiciendis tempora rem laborum assumenda aperiam similique hic aspernatur asperiores placeat ab?
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos porro nisi provident animi fugiat amet obcaecati quae eveniet dolore. Veritatis, sunt dolore voluptate magni nesciunt maxime inventore corrupti recusandae. Ullam nisi saepe eius dolor cupiditate quis quasi, perferendis reiciendis tempora rem laborum assumenda aperiam similique hic aspernatur asperiores placeat ab?
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos porro nisi provident animi fugiat amet obcaecati quae eveniet dolore. Veritatis, sunt dolore voluptate magni nesciunt maxime inventore corrupti recusandae. Ullam nisi saepe eius dolor cupiditate quis quasi, perferendis reiciendis tempora rem laborum assumenda aperiam similique hic aspernatur asperiores placeat ab?';
+$testo = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos porro nisi provident animi fugiat amet obcaecati quae eveniet dolore. 
+Veritatis, sunt dolore voluptate magni nesciunt maxime inventore corrupti recusandae. Ullam nisi saepe eius dolor cupiditate quis quasi, perferendis reiciendis tempora rem laborum assumenda aperiam similique hic aspernatur asperiores placeat ab?
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos porro nisi provident animi fugiat amet obcaecati quae eveniet dolore. 
+Veritatis, sunt dolore voluptate magni nesciunt maxime inventore corrupti recusandae. Ullam nisi saepe eius dolor cupiditate quis quasi, perferendis reiciendis tempora rem laborum assumenda aperiam similique hic aspernatur asperiores placeat ab?
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos porro nisi provident animi fugiat amet obcaecati quae eveniet dolore. 
+Veritatis, sunt dolore voluptate magni nesciunt maxime inventore corrupti recusandae. Ullam nisi saepe eius dolor cupiditate quis quasi, perferendis reiciendis tempora rem laborum assumenda aperiam similique hic aspernatur asperiores placeat ab?
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos porro nisi provident animi fugiat amet obcaecati quae eveniet dolore. 
+Veritatis, sunt dolore voluptate magni nesciunt maxime inventore corrupti recusandae. Ullam nisi saepe eius dolor cupiditate quis quasi, perferendis reiciendis tempora rem laborum assumenda aperiam similique hic aspernatur asperiores placeat ab?';
 
 $parolaCensuraGet = $_GET["UserWordIs"];
 $censored = "***";
