@@ -7,10 +7,27 @@
 <?php 
 $nome = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 Architecto excepturi laboriosam adipisci incidunt, maxime quas doloremque ipsum dicta ducimus possimus!';
-
 var_dump($nome);
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello PHP</title>
+
+</head>
+<body>
+    <H1>Hello PHP</H1>
+
+    <p>
+        Questo è il paragrafo preso da PHP : <?php echo $nome?>
+    </p>
+</body>
+</html>
 
 
  
