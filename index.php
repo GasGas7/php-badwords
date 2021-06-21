@@ -7,14 +7,16 @@
 <?php 
 
 #Variabili
-$nome = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-Architecto excepturi laboriosam adipisci incidunt, maxime quas doloremque ipsum dicta ducimus possimus!';
+$testo = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos porro nisi provident animi fugiat amet obcaecati quae eveniet dolore. Veritatis, sunt dolore voluptate magni nesciunt maxime inventore corrupti recusandae. Ullam nisi saepe eius dolor cupiditate quis quasi, perferendis reiciendis tempora rem laborum assumenda aperiam similique hic aspernatur asperiores placeat ab?
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos porro nisi provident animi fugiat amet obcaecati quae eveniet dolore. Veritatis, sunt dolore voluptate magni nesciunt maxime inventore corrupti recusandae. Ullam nisi saepe eius dolor cupiditate quis quasi, perferendis reiciendis tempora rem laborum assumenda aperiam similique hic aspernatur asperiores placeat ab?
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos porro nisi provident animi fugiat amet obcaecati quae eveniet dolore. Veritatis, sunt dolore voluptate magni nesciunt maxime inventore corrupti recusandae. Ullam nisi saepe eius dolor cupiditate quis quasi, perferendis reiciendis tempora rem laborum assumenda aperiam similique hic aspernatur asperiores placeat ab?
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos porro nisi provident animi fugiat amet obcaecati quae eveniet dolore. Veritatis, sunt dolore voluptate magni nesciunt maxime inventore corrupti recusandae. Ullam nisi saepe eius dolor cupiditate quis quasi, perferendis reiciendis tempora rem laborum assumenda aperiam similique hic aspernatur asperiores placeat ab?';
 
-$nomeGet = $_GET["UserWordIs"];
-
+$parolaCensuraGet = $_GET["UserWordIs"];
+$censored = "***";
 #String Functions
-var_dump($nome);
-var_dump($nomeGet);
+var_dump($testo);
+var_dump($parolaCensuraGet);
 ?>
 
 <!DOCTYPE html>
@@ -30,12 +32,16 @@ var_dump($nomeGet);
     <H1>Hello PHP</H1>
 
     <p>
-        Questo è il paragrafo preso da PHP : <?php echo $nome?>
+        Questo è il paragrafo preso da PHP : <?php echo $testo?>
     </p>
     <p>
-        La sua lunghezza è <?php echo strlen($nome) ?> 
+        La sua lunghezza è <?php echo strlen($testo) ?> 
 
-        and <?php echo $nomeGet ?> ma qui la censurianmo come tre asterischi <?php  ?>
+        e questo è la parola presa con meotodo $_GET : "<?php echo $parolaCensuraGet ?>", ma qui la censurianmo come tre asterischi <?php echo str_replace($parolaCensuraGet, $censored, $parolaCensuraGet); ?>
+    </p>
+
+    <p>
+        Questo è il mio testo censurato: <?php echo str_replace( $parolaCensuraGet, $censored, $testo); ?>
     </p>
 </body>
 </html>
